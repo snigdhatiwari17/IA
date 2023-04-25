@@ -16,6 +16,7 @@
 		F4A3B5B729F82807009B86DB /* IATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5B629F82807009B86DB /* IATests.swift */; };
 		F4A3B5C129F82807009B86DB /* IAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5C029F82807009B86DB /* IAUITests.swift */; };
 		F4A3B5C329F82807009B86DB /* IAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5C229F82807009B86DB /* IAUITestsLaunchTests.swift */; };
+		F4A3B5D029F82949009B86DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5CF29F82949009B86DB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F4A3B5BC29F82807009B86DB /* IAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A3B5C029F82807009B86DB /* IAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAUITests.swift; sourceTree = "<group>"; };
 		F4A3B5C229F82807009B86DB /* IAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4A3B5CF29F82949009B86DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				F4A3B5A829F82807009B86DB /* Assets.xcassets */,
 				F4A3B5AA29F82807009B86DB /* LaunchScreen.storyboard */,
 				F4A3B5AD29F82807009B86DB /* Info.plist */,
+				F4A3B5CF29F82949009B86DB /* Constants.swift */,
 			);
 			path = IA;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				F4A3B5A429F82805009B86DB /* ViewController.swift in Sources */,
 				F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */,
 				F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */,
+				F4A3B5D029F82949009B86DB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
