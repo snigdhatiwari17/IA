@@ -17,19 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hci-Cv-RJF">
-                                <rect key="frame" x="165.33333333333334" y="405.66666666666669" width="62.666666666666657" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyo-aq-xum">
                                 <rect key="frame" x="0.0" y="681.33333333333337" width="393" height="34.333333333333371"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Register"/>
                                 <connections>
-                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rba-xc-kw2"/>
                                     <segue destination="ngs-cO-wHi" kind="show" identifier="welcomeToRegister" id="tZN-2S-RQ7"/>
                                 </connections>
                             </button>
@@ -39,33 +32,35 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign In"/>
                                 <connections>
-                                    <action selector="signUpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRH-C1-HuR"/>
                                     <segue destination="uAi-BZ-LkZ" kind="show" identifier="welcomeToLogIn" id="6YP-OY-ycd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vets4Pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RY-eP-ego">
+                                <rect key="frame" x="157.66666666666666" y="415.66666666666669" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Hci-Cv-RJF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5NY-WT-62l"/>
+                            <constraint firstItem="1RY-eP-ego" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8S1-ZJ-e6J"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P75-6x-q00" secondAttribute="bottom" constant="48" id="9Y8-bv-r6d"/>
-                            <constraint firstItem="Hci-Cv-RJF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GeI-KU-rtz"/>
                             <constraint firstItem="P75-6x-q00" firstAttribute="top" secondItem="Qyo-aq-xum" secondAttribute="bottom" constant="20" id="Tvo-nQ-EOX"/>
                             <constraint firstItem="Qyo-aq-xum" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XMU-Zf-Rgi"/>
                             <constraint firstItem="P75-6x-q00" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aJn-5s-y2Y"/>
                             <constraint firstItem="P75-6x-q00" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aoS-Yv-feW"/>
+                            <constraint firstItem="1RY-eP-ego" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="luG-dI-6ed"/>
                             <constraint firstItem="P75-6x-q00" firstAttribute="top" secondItem="Qyo-aq-xum" secondAttribute="bottom" constant="20" id="nfz-fI-DFP"/>
                             <constraint firstItem="Qyo-aq-xum" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wbs-QR-cfm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VjD-Lv-R8d"/>
-                    <connections>
-                        <outlet property="titleLabel" destination="Hci-Cv-RJF" id="4dH-SP-OaX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="154"/>
+            <point key="canvasLocation" x="974.80916030534343" y="153.52112676056339"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="pDW-gY-KjC">
@@ -153,6 +148,9 @@
                                 <rect key="frame" x="125" y="555" width="103" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign In ✅"/>
+                                <connections>
+                                    <segue destination="1WH-jw-aSM" kind="show" id="Ueg-O0-jS5"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🐶 pet's name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="04e-5A-ca9">
                                 <rect key="frame" x="30" y="352" width="333" height="34"/>
@@ -220,44 +218,47 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="COZ-jL-Sbl">
-                                <rect key="frame" x="30" y="675" width="333" height="123"/>
+                                <rect key="frame" x="30" y="635" width="333" height="163"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HCN-ne-jOS">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="34.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="54.333333333333336"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cmk-cX-8z9">
-                                                <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="54.333333333333336"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Animal Medical Blog!"/>
+                                                <connections>
+                                                    <segue destination="ziU-fu-Qy5" kind="show" id="hk1-gF-7sT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjM-he-OSr">
-                                                <rect key="frame" x="171.66666666666663" y="0.0" width="161.33333333333337" height="34.333333333333336"/>
+                                                <rect key="frame" x="171.66666666666663" y="0.0" width="161.33333333333337" height="54.333333333333336"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Get Help Now!"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WXM-H3-ned">
-                                        <rect key="frame" x="0.0" y="44.333333333333371" width="333" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="64.333333333333371" width="333" height="54.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GA-mE-JI1">
-                                                <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="54.333333333333336"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Book an appointment!"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jor-9N-J2O">
-                                                <rect key="frame" x="171.66666666666663" y="0.0" width="161.33333333333337" height="34.333333333333336"/>
+                                                <rect key="frame" x="171.66666666666663" y="0.0" width="161.33333333333337" height="54.333333333333336"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Pet Health Record"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0bA-un-WI8">
-                                        <rect key="frame" x="0.0" y="88.666666666666629" width="333" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="128.66666666666663" width="333" height="34.333333333333343"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXl-3c-3FN">
                                                 <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="34.333333333333336"/>
@@ -290,6 +291,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CYa-1Y-3xw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2765.6488549618321" y="574.64788732394368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EyL-hV-hcF">
+            <objects>
+                <viewController id="TJn-pT-DTv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BTS-1S-yV9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LT0-HT-Msw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6u-DQ-cjJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3630" y="956"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="dLk-OY-Qbx">
+            <objects>
+                <tableViewController id="ziU-fu-Qy5" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VTT-qm-hCz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="O2q-TE-NoC">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O2q-TE-NoC" id="tTz-bd-OB5">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ziU-fu-Qy5" id="1Dv-TG-5wE"/>
+                            <outlet property="delegate" destination="ziU-fu-Qy5" id="2mU-Yc-gFU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="eaf-99-TW9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFC-Ja-3Sk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4340" y="575"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="K1b-f8-XfC">
@@ -356,6 +401,9 @@
             <point key="canvasLocation" x="-42" y="154"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ueg-O0-jS5"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

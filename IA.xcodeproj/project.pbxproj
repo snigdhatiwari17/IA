@@ -21,6 +21,7 @@
 		F4A3B62029F94CB2009B86DB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B61F29F94CB2009B86DB /* LogInViewController.swift */; };
 		F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62129F94CC4009B86DB /* HomeViewController.swift */; };
 		F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62429F955A7009B86DB /* DetailViewController.swift */; };
+		F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62629F9620E009B86DB /* BlogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F4A3B61F29F94CB2009B86DB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		F4A3B62129F94CC4009B86DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4A3B62429F955A7009B86DB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F4A3B62629F9620E009B86DB /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				F4A3B61F29F94CB2009B86DB /* LogInViewController.swift */,
 				F4A3B62129F94CC4009B86DB /* HomeViewController.swift */,
 				F4A3B62429F955A7009B86DB /* DetailViewController.swift */,
+				F4A3B62629F9620E009B86DB /* BlogViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				F4A3B62029F94CB2009B86DB /* LogInViewController.swift in Sources */,
 				F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */,
 				F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */,
+				F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */,
 				F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */,
 				F4A3B5D029F82949009B86DB /* Constants.swift in Sources */,
 				F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */,

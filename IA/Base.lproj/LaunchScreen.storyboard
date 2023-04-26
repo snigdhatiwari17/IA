@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loading Snigdha's Computer Science IA🐶🐰🐷🐮🦆🐥🐔🐒🐢🐠🐡🐳..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="21" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I0o-PK-jgR">
-                                <rect key="frame" x="0.0" y="416" width="393" height="81"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Snigdha's Computer Science IA🐶🐰🐷🐮🦆🐥🐔🐒🐢🐠🐡🐳..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="21" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I0o-PK-jgR">
+                                <rect key="frame" x="0.0" y="405.66666666666669" width="393" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,8 +26,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="I0o-PK-jgR" secondAttribute="trailing" id="12N-ua-wXM"/>
                             <constraint firstItem="I0o-PK-jgR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2VO-7c-09B"/>
                             <constraint firstItem="I0o-PK-jgR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="V2u-MP-MCO"/>
+                            <constraint firstItem="I0o-PK-jgR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aQE-jE-in8"/>
+                            <constraint firstItem="I0o-PK-jgR" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="x1i-V7-z8Y"/>
+                            <constraint firstItem="I0o-PK-jgR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="xYb-hg-lie"/>
                         </constraints>
                     </view>
                 </viewController>
