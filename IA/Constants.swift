@@ -10,4 +10,7 @@ struct K {
     
     static let appName = "Vets4Pets🐶"
     
+    static let toRegisterSegue = "welcomeToRegister"
+    static let toLogInSegue = "welcomeToLogIn"
+    
 }
