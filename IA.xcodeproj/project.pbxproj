@@ -22,6 +22,10 @@
 		F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62129F94CC4009B86DB /* HomeViewController.swift */; };
 		F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62429F955A7009B86DB /* DetailViewController.swift */; };
 		F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62629F9620E009B86DB /* BlogViewController.swift */; };
+		F4A3B62F29FAC6B0009B86DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4A3B62E29FAC6B0009B86DB /* GoogleService-Info.plist */; };
+		F4A3B63229FAC735009B86DB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F4A3B63129FAC735009B86DB /* FirebaseAuth */; };
+		F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B63329FACA23009B86DB /* PaymentViewController.swift */; };
+		F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B63529FACBD7009B86DB /* EMRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,9 @@
 		F4A3B62129F94CC4009B86DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4A3B62429F955A7009B86DB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F4A3B62629F9620E009B86DB /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		F4A3B62E29FAC6B0009B86DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4A3B63329FACA23009B86DB /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		F4A3B63529FACBD7009B86DB /* EMRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A3B63229FAC735009B86DB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +142,7 @@
 		F4A3B5BF29F82807009B86DB /* IAUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F4A3B62E29FAC6B0009B86DB /* GoogleService-Info.plist */,
 				F4A3B5C029F82807009B86DB /* IAUITests.swift */,
 				F4A3B5C229F82807009B86DB /* IAUITestsLaunchTests.swift */,
 			);
@@ -149,6 +158,8 @@
 				F4A3B62129F94CC4009B86DB /* HomeViewController.swift */,
 				F4A3B62429F955A7009B86DB /* DetailViewController.swift */,
 				F4A3B62629F9620E009B86DB /* BlogViewController.swift */,
+				F4A3B63329FACA23009B86DB /* PaymentViewController.swift */,
+				F4A3B63529FACBD7009B86DB /* EMRViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +180,9 @@
 			dependencies = (
 			);
 			name = IA;
+			packageProductDependencies = (
+				F4A3B63129FAC735009B86DB /* FirebaseAuth */,
+			);
 			productName = IA;
 			productReference = F4A3B59C29F82805009B86DB /* IA.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +255,9 @@
 				Base,
 			);
 			mainGroup = F4A3B59329F82805009B86DB;
+			packageReferences = (
+				F4A3B63029FAC735009B86DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F4A3B59D29F82805009B86DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A3B5AC29F82807009B86DB /* LaunchScreen.storyboard in Resources */,
+				F4A3B62F29FAC6B0009B86DB /* GoogleService-Info.plist in Resources */,
 				F4A3B5A929F82807009B86DB /* Assets.xcassets in Resources */,
 				F4A3B5A729F82805009B86DB /* Main.storyboard in Resources */,
 			);
@@ -287,10 +305,12 @@
 				F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */,
 				F4A3B61E29F94CA1009B86DB /* RegisterViewController.swift in Sources */,
 				F4A3B62029F94CB2009B86DB /* LogInViewController.swift in Sources */,
+				F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */,
 				F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */,
 				F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */,
 				F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */,
 				F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */,
+				F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */,
 				F4A3B5D029F82949009B86DB /* Constants.swift in Sources */,
 				F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */,
 			);
@@ -634,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4A3B63029FAC735009B86DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4A3B63129FAC735009B86DB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4A3B63029FAC735009B86DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4A3B59429F82805009B86DB /* Project object */;
 }

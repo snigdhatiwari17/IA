@@ -12,5 +12,7 @@ struct K {
     
     static let toRegisterSegue = "welcomeToRegister"
     static let toLogInSegue = "welcomeToLogIn"
-    
+    static let toDetailSegue = "registerToDetail"
+    static let toHomeFromLogInSegue = "logInToHome"
+    static let resusableEMRcell = "EMRcell"
 }
