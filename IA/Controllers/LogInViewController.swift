@@ -10,6 +10,7 @@ import FirebaseAuth
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var errorLabel: UILabel!
     
     @IBOutlet weak var emailTextfield: UITextField!
     
@@ -26,6 +27,8 @@ class LogInViewController: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 if let e = error{
                     print(e)
+                    self.errorLabel.text = e.localizedDescription
+                    
                 } else {
                     self.performSegue(withIdentifier: K.toHomeFromLogInSegue, sender: self)
                 }

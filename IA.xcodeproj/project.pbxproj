@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4191EFC2A0E112D00B0DA60 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4191EFB2A0E112D00B0DA60 /* LaunchScreenViewController.swift */; };
 		F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B59F29F82805009B86DB /* AppDelegate.swift */; };
 		F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5A129F82805009B86DB /* SceneDelegate.swift */; };
 		F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4191EFB2A0E112D00B0DA60 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		F4A3B59C29F82805009B86DB /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A3B59F29F82805009B86DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A3B5A129F82805009B86DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		F4A3B62329F94CD1009B86DB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F4191EFB2A0E112D00B0DA60 /* LaunchScreenViewController.swift */,
 				F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */,
 				F4A3B61D29F94CA1009B86DB /* RegisterViewController.swift */,
 				F4A3B61F29F94CB2009B86DB /* LogInViewController.swift */,
@@ -312,6 +315,7 @@
 				F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */,
 				F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */,
 				F4A3B5D029F82949009B86DB /* Constants.swift in Sources */,
+				F4191EFC2A0E112D00B0DA60 /* LaunchScreenViewController.swift in Sources */,
 				F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
