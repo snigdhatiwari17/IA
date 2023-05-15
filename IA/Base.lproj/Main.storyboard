@@ -65,7 +65,7 @@
         <!--Register View Controller-->
         <scene sceneID="pDW-gY-KjC">
             <objects>
-                <viewController id="ngs-cO-wHi" customClass="RegisterViewController" sceneMemberID="viewController">
+                <viewController id="ngs-cO-wHi" customClass="RegisterViewController" customModule="IA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pXO-Jm-LiP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,8 +105,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="F1Q-DM-97h"/>
                     <connections>
-                        <outlet property="emailTextfield" destination="RYx-cJ-Ruc" id="MIP-FW-0VA"/>
-                        <outlet property="passwordTextfield" destination="6Cf-ln-jPI" id="7uX-fC-aMo"/>
+                        <outlet property="emailTextfield" destination="RYx-cJ-Ruc" id="rA4-bp-tTL"/>
+                        <outlet property="passwordTextfield" destination="6Cf-ln-jPI" id="RGf-IN-aXD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUU-C9-mzN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,6 +175,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Sign In ✅"/>
                                 <connections>
+                                    <action selector="signInPressed:" destination="fcg-U7-c6H" eventType="touchUpInside" id="kO2-CP-i2I"/>
                                     <segue destination="1WH-jw-aSM" kind="show" id="Ueg-O0-jS5"/>
                                 </connections>
                             </button>
@@ -227,6 +228,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D2i-9P-ilg"/>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="RLk-dT-KDp" id="gVf-Kg-T8c"/>
+                        <outlet property="lastNameTextField" destination="u59-ZV-cF6" id="C0r-Rm-nXp"/>
+                        <outlet property="microchipIDTextField" destination="nLE-FC-Et5" id="VXu-Bc-LsD"/>
+                        <outlet property="petNameTextField" destination="04e-5A-ca9" id="eTf-Wz-wG1"/>
+                        <outlet property="phoneNumberTextField" destination="W3n-3k-8MM" id="9zp-oq-Zsj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tEd-8Z-G8k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -534,11 +542,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Toz-xm-4rV"/>
+        <segue reference="Ueg-O0-jS5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
-            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

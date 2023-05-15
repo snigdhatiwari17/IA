@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4191EFC2A0E112D00B0DA60 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4191EFB2A0E112D00B0DA60 /* LaunchScreenViewController.swift */; };
 		F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B59F29F82805009B86DB /* AppDelegate.swift */; };
 		F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5A129F82805009B86DB /* SceneDelegate.swift */; };
 		F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */; };
@@ -27,6 +26,15 @@
 		F4A3B63229FAC735009B86DB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F4A3B63129FAC735009B86DB /* FirebaseAuth */; };
 		F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B63329FACA23009B86DB /* PaymentViewController.swift */; };
 		F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B63529FACBD7009B86DB /* EMRViewController.swift */; };
+		F4C9F3732A11E0B30020E502 /* PetOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3722A11E0B30020E502 /* PetOwner.swift */; };
+		F4C9F3752A11E17F0020E502 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3742A11E17F0020E502 /* Pet.swift */; };
+		F4C9F3772A11E22A0020E502 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3762A11E22A0020E502 /* Dog.swift */; };
+		F4C9F3792A11E2340020E502 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3782A11E2340020E502 /* Cat.swift */; };
+		F4C9F37B2A11E3D10020E502 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F37A2A11E3D10020E502 /* Medicine.swift */; };
+		F4C9F37D2A11E4530020E502 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F37C2A11E4530020E502 /* Prescription.swift */; };
+		F4C9F3812A126B490020E502 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F4C9F3802A126B490020E502 /* Realm */; };
+		F4C9F3832A126B490020E502 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4C9F3822A126B490020E502 /* RealmSwift */; };
+		F4C9F3852A12717D0020E502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4C9F3842A12717D0020E502 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F4191EFB2A0E112D00B0DA60 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		F4A3B59C29F82805009B86DB /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A3B59F29F82805009B86DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A3B5A129F82805009B86DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +62,6 @@
 		F4A3B5A629F82805009B86DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A3B5A829F82807009B86DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A3B5AB29F82807009B86DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F4A3B5AD29F82807009B86DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A3B5B229F82807009B86DB /* IATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A3B5B629F82807009B86DB /* IATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IATests.swift; sourceTree = "<group>"; };
 		F4A3B5BC29F82807009B86DB /* IAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +76,13 @@
 		F4A3B62E29FAC6B0009B86DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4A3B63329FACA23009B86DB /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		F4A3B63529FACBD7009B86DB /* EMRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMRViewController.swift; sourceTree = "<group>"; };
+		F4C9F3722A11E0B30020E502 /* PetOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetOwner.swift; sourceTree = "<group>"; };
+		F4C9F3742A11E17F0020E502 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		F4C9F3762A11E22A0020E502 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		F4C9F3782A11E2340020E502 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		F4C9F37A2A11E3D10020E502 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		F4C9F37C2A11E4530020E502 /* Prescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
+		F4C9F3842A12717D0020E502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C9F3832A126B490020E502 /* RealmSwift in Frameworks */,
+				F4C9F3812A126B490020E502 /* Realm in Frameworks */,
 				F4A3B63229FAC735009B86DB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,12 +138,13 @@
 			children = (
 				F4A3B59F29F82805009B86DB /* AppDelegate.swift */,
 				F4A3B5A129F82805009B86DB /* SceneDelegate.swift */,
+				F4C9F3712A11E07F0020E502 /* DataModels */,
 				F4A3B62329F94CD1009B86DB /* Controllers */,
 				F4A3B5A529F82805009B86DB /* Main.storyboard */,
 				F4A3B5A829F82807009B86DB /* Assets.xcassets */,
 				F4A3B5AA29F82807009B86DB /* LaunchScreen.storyboard */,
-				F4A3B5AD29F82807009B86DB /* Info.plist */,
 				F4A3B5CF29F82949009B86DB /* Constants.swift */,
+				F4C9F3842A12717D0020E502 /* GoogleService-Info.plist */,
 			);
 			path = IA;
 			sourceTree = "<group>";
@@ -154,7 +170,6 @@
 		F4A3B62329F94CD1009B86DB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4191EFB2A0E112D00B0DA60 /* LaunchScreenViewController.swift */,
 				F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */,
 				F4A3B61D29F94CA1009B86DB /* RegisterViewController.swift */,
 				F4A3B61F29F94CB2009B86DB /* LogInViewController.swift */,
@@ -165,6 +180,19 @@
 				F4A3B63529FACBD7009B86DB /* EMRViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F4C9F3712A11E07F0020E502 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				F4C9F37A2A11E3D10020E502 /* Medicine.swift */,
+				F4C9F37C2A11E4530020E502 /* Prescription.swift */,
+				F4C9F3722A11E0B30020E502 /* PetOwner.swift */,
+				F4C9F3742A11E17F0020E502 /* Pet.swift */,
+				F4C9F3762A11E22A0020E502 /* Dog.swift */,
+				F4C9F3782A11E2340020E502 /* Cat.swift */,
+			);
+			path = DataModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +213,8 @@
 			name = IA;
 			packageProductDependencies = (
 				F4A3B63129FAC735009B86DB /* FirebaseAuth */,
+				F4C9F3802A126B490020E502 /* Realm */,
+				F4C9F3822A126B490020E502 /* RealmSwift */,
 			);
 			productName = IA;
 			productReference = F4A3B59C29F82805009B86DB /* IA.app */;
@@ -260,6 +290,7 @@
 			mainGroup = F4A3B59329F82805009B86DB;
 			packageReferences = (
 				F4A3B63029FAC735009B86DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F4C9F37F2A126B490020E502 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = F4A3B59D29F82805009B86DB /* Products */;
 			projectDirPath = "";
@@ -279,6 +310,7 @@
 			files = (
 				F4A3B5AC29F82807009B86DB /* LaunchScreen.storyboard in Resources */,
 				F4A3B62F29FAC6B0009B86DB /* GoogleService-Info.plist in Resources */,
+				F4C9F3852A12717D0020E502 /* GoogleService-Info.plist in Resources */,
 				F4A3B5A929F82807009B86DB /* Assets.xcassets in Resources */,
 				F4A3B5A729F82805009B86DB /* Main.storyboard in Resources */,
 			);
@@ -307,15 +339,20 @@
 			files = (
 				F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */,
 				F4A3B61E29F94CA1009B86DB /* RegisterViewController.swift in Sources */,
+				F4C9F3792A11E2340020E502 /* Cat.swift in Sources */,
 				F4A3B62029F94CB2009B86DB /* LogInViewController.swift in Sources */,
 				F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */,
 				F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */,
 				F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */,
+				F4C9F37B2A11E3D10020E502 /* Medicine.swift in Sources */,
 				F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */,
+				F4C9F37D2A11E4530020E502 /* Prescription.swift in Sources */,
 				F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */,
+				F4C9F3772A11E22A0020E502 /* Dog.swift in Sources */,
 				F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */,
+				F4C9F3732A11E0B30020E502 /* PetOwner.swift in Sources */,
 				F4A3B5D029F82949009B86DB /* Constants.swift in Sources */,
-				F4191EFC2A0E112D00B0DA60 /* LaunchScreenViewController.swift in Sources */,
+				F4C9F3752A11E17F0020E502 /* Pet.swift in Sources */,
 				F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,6 +705,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		F4C9F37F2A126B490020E502 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.39.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -675,6 +720,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F4A3B63029FAC735009B86DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		F4C9F3802A126B490020E502 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C9F37F2A126B490020E502 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		F4C9F3822A126B490020E502 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4C9F37F2A126B490020E502 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
