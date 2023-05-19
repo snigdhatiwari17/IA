@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>865014051021-ccdsfbjfd5v42fqqigj08r4mdii55fgt.apps.googleusercontent.com</string>
+	<string>865014051021-5n7fo1f3160jscmdi87qt33llruueid6.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.865014051021-ccdsfbjfd5v42fqqigj08r4mdii55fgt</string>
+	<string>com.googleusercontent.apps.865014051021-5n7fo1f3160jscmdi87qt33llruueid6</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBq0b9GtWkkQETVZR0CzursD1uJG84dx-Q</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Snigdha.IA</string>
+	<string>snigdha.IA</string>
 	<key>PROJECT_ID</key>
 	<string>ia-vets4pets</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:865014051021:ios:06153ce4b2f6feaefc7984</string>
+	<string>1:865014051021:ios:a7157d36f5eba778fc7984</string>
 </dict>
 </plist>

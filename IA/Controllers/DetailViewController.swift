@@ -39,14 +39,12 @@ class DetailViewController: UIViewController {
         do {
             try self.realm.write {
                 let newOwner = PetOwner()
-                newOwner.name = "\(firstNameTextField.text) \(lastNameTextField.text)"
+                newOwner.firstName = firstNameTextField.text ?? "Not Provided"
+                newOwner.lastName = lastNameTextField.text ?? "Not Provided"
                 newOwner.phone = phoneNumberTextField.text ?? "Not Provided"
-                newOwner.address = ""
-                newOwner.petType = ""
                 newOwner.petName = petNameTextField.text ?? "Not Provided"
                 newOwner.dateCreated = Date()
-                
-                
+                realm.add(newOwner)
             }
         } catch {
             print("Error saving new items, \(error)")

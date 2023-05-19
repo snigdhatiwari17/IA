@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F474E8502A1379E300EAD05C /* PetDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E84F2A1379E300EAD05C /* PetDetails.swift */; };
+		F474E8522A14CC0400EAD05C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E8512A14CC0400EAD05C /* MapViewController.swift */; };
+		F474E8582A16A31700EAD05C /* MedicineEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */; };
 		F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B59F29F82805009B86DB /* AppDelegate.swift */; };
 		F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5A129F82805009B86DB /* SceneDelegate.swift */; };
 		F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */; };
-		F4A3B5A729F82805009B86DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A3B5A529F82805009B86DB /* Main.storyboard */; };
 		F4A3B5A929F82807009B86DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A3B5A829F82807009B86DB /* Assets.xcassets */; };
 		F4A3B5AC29F82807009B86DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A3B5AA29F82807009B86DB /* LaunchScreen.storyboard */; };
 		F4A3B5B729F82807009B86DB /* IATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5B629F82807009B86DB /* IATests.swift */; };
@@ -22,7 +24,6 @@
 		F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62129F94CC4009B86DB /* HomeViewController.swift */; };
 		F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62429F955A7009B86DB /* DetailViewController.swift */; };
 		F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B62629F9620E009B86DB /* BlogViewController.swift */; };
-		F4A3B62F29FAC6B0009B86DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4A3B62E29FAC6B0009B86DB /* GoogleService-Info.plist */; };
 		F4A3B63229FAC735009B86DB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F4A3B63129FAC735009B86DB /* FirebaseAuth */; };
 		F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B63329FACA23009B86DB /* PaymentViewController.swift */; };
 		F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B63529FACBD7009B86DB /* EMRViewController.swift */; };
@@ -30,11 +31,15 @@
 		F4C9F3752A11E17F0020E502 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3742A11E17F0020E502 /* Pet.swift */; };
 		F4C9F3772A11E22A0020E502 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3762A11E22A0020E502 /* Dog.swift */; };
 		F4C9F3792A11E2340020E502 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3782A11E2340020E502 /* Cat.swift */; };
-		F4C9F37B2A11E3D10020E502 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F37A2A11E3D10020E502 /* Medicine.swift */; };
 		F4C9F37D2A11E4530020E502 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F37C2A11E4530020E502 /* Prescription.swift */; };
 		F4C9F3812A126B490020E502 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F4C9F3802A126B490020E502 /* Realm */; };
 		F4C9F3832A126B490020E502 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4C9F3822A126B490020E502 /* RealmSwift */; };
-		F4C9F3852A12717D0020E502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4C9F3842A12717D0020E502 /* GoogleService-Info.plist */; };
+		F4C9F3892A12AD150020E502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4C9F3882A12AD150020E502 /* GoogleService-Info.plist */; };
+		F4C9F38A2A12AD150020E502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4C9F3882A12AD150020E502 /* GoogleService-Info.plist */; };
+		F4C9F38B2A12AD150020E502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4C9F3882A12AD150020E502 /* GoogleService-Info.plist */; };
+		F4C9F38D2A12B2E90020E502 /* Medicines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F38C2A12B2E90020E502 /* Medicines.swift */; };
+		F4C9F38E2A12B2E90020E502 /* Medicines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F38C2A12B2E90020E502 /* Medicines.swift */; };
+		F4C9F38F2A12B2E90020E502 /* Medicines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F38C2A12B2E90020E502 /* Medicines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +60,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F474E84F2A1379E300EAD05C /* PetDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetails.swift; sourceTree = "<group>"; };
+		F474E8512A14CC0400EAD05C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineEditViewController.swift; sourceTree = "<group>"; };
 		F4A3B59C29F82805009B86DB /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A3B59F29F82805009B86DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A3B5A129F82805009B86DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		F4A3B5A629F82805009B86DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A3B5A829F82807009B86DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A3B5AB29F82807009B86DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4A3B5B229F82807009B86DB /* IATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,16 +80,15 @@
 		F4A3B62129F94CC4009B86DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F4A3B62429F955A7009B86DB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F4A3B62629F9620E009B86DB /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
-		F4A3B62E29FAC6B0009B86DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4A3B63329FACA23009B86DB /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		F4A3B63529FACBD7009B86DB /* EMRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMRViewController.swift; sourceTree = "<group>"; };
 		F4C9F3722A11E0B30020E502 /* PetOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetOwner.swift; sourceTree = "<group>"; };
 		F4C9F3742A11E17F0020E502 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		F4C9F3762A11E22A0020E502 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		F4C9F3782A11E2340020E502 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
-		F4C9F37A2A11E3D10020E502 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		F4C9F37C2A11E4530020E502 /* Prescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
-		F4C9F3842A12717D0020E502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4C9F3882A12AD150020E502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4C9F38C2A12B2E90020E502 /* Medicines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +146,10 @@
 				F4A3B5A129F82805009B86DB /* SceneDelegate.swift */,
 				F4C9F3712A11E07F0020E502 /* DataModels */,
 				F4A3B62329F94CD1009B86DB /* Controllers */,
-				F4A3B5A529F82805009B86DB /* Main.storyboard */,
 				F4A3B5A829F82807009B86DB /* Assets.xcassets */,
 				F4A3B5AA29F82807009B86DB /* LaunchScreen.storyboard */,
 				F4A3B5CF29F82949009B86DB /* Constants.swift */,
-				F4C9F3842A12717D0020E502 /* GoogleService-Info.plist */,
+				F4C9F3882A12AD150020E502 /* GoogleService-Info.plist */,
 			);
 			path = IA;
 			sourceTree = "<group>";
@@ -160,7 +165,6 @@
 		F4A3B5BF29F82807009B86DB /* IAUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F4A3B62E29FAC6B0009B86DB /* GoogleService-Info.plist */,
 				F4A3B5C029F82807009B86DB /* IAUITests.swift */,
 				F4A3B5C229F82807009B86DB /* IAUITestsLaunchTests.swift */,
 			);
@@ -178,6 +182,8 @@
 				F4A3B62629F9620E009B86DB /* BlogViewController.swift */,
 				F4A3B63329FACA23009B86DB /* PaymentViewController.swift */,
 				F4A3B63529FACBD7009B86DB /* EMRViewController.swift */,
+				F474E8512A14CC0400EAD05C /* MapViewController.swift */,
+				F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,10 +191,11 @@
 		F4C9F3712A11E07F0020E502 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
-				F4C9F37A2A11E3D10020E502 /* Medicine.swift */,
+				F4C9F38C2A12B2E90020E502 /* Medicines.swift */,
 				F4C9F37C2A11E4530020E502 /* Prescription.swift */,
 				F4C9F3722A11E0B30020E502 /* PetOwner.swift */,
 				F4C9F3742A11E17F0020E502 /* Pet.swift */,
+				F474E84F2A1379E300EAD05C /* PetDetails.swift */,
 				F4C9F3762A11E22A0020E502 /* Dog.swift */,
 				F4C9F3782A11E2340020E502 /* Cat.swift */,
 			);
@@ -309,10 +316,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A3B5AC29F82807009B86DB /* LaunchScreen.storyboard in Resources */,
-				F4A3B62F29FAC6B0009B86DB /* GoogleService-Info.plist in Resources */,
-				F4C9F3852A12717D0020E502 /* GoogleService-Info.plist in Resources */,
+				F4C9F3892A12AD150020E502 /* GoogleService-Info.plist in Resources */,
 				F4A3B5A929F82807009B86DB /* Assets.xcassets in Resources */,
-				F4A3B5A729F82805009B86DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C9F38A2A12AD150020E502 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C9F38B2A12AD150020E502 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,17 +347,20 @@
 				F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */,
 				F4A3B61E29F94CA1009B86DB /* RegisterViewController.swift in Sources */,
 				F4C9F3792A11E2340020E502 /* Cat.swift in Sources */,
+				F4C9F38D2A12B2E90020E502 /* Medicines.swift in Sources */,
 				F4A3B62029F94CB2009B86DB /* LogInViewController.swift in Sources */,
 				F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */,
 				F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */,
+				F474E8522A14CC0400EAD05C /* MapViewController.swift in Sources */,
 				F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */,
-				F4C9F37B2A11E3D10020E502 /* Medicine.swift in Sources */,
+				F474E8502A1379E300EAD05C /* PetDetails.swift in Sources */,
 				F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */,
 				F4C9F37D2A11E4530020E502 /* Prescription.swift in Sources */,
 				F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */,
 				F4C9F3772A11E22A0020E502 /* Dog.swift in Sources */,
 				F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */,
 				F4C9F3732A11E0B30020E502 /* PetOwner.swift in Sources */,
+				F474E8582A16A31700EAD05C /* MedicineEditViewController.swift in Sources */,
 				F4A3B5D029F82949009B86DB /* Constants.swift in Sources */,
 				F4C9F3752A11E17F0020E502 /* Pet.swift in Sources */,
 				F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */,
@@ -362,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A3B5B729F82807009B86DB /* IATests.swift in Sources */,
+				F4C9F38E2A12B2E90020E502 /* Medicines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4C9F38F2A12B2E90020E502 /* Medicines.swift in Sources */,
 				F4A3B5C329F82807009B86DB /* IAUITestsLaunchTests.swift in Sources */,
 				F4A3B5C129F82807009B86DB /* IAUITests.swift in Sources */,
 			);
@@ -390,14 +402,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F4A3B5A529F82805009B86DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4A3B5A629F82805009B86DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4A3B5AA29F82807009B86DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -459,6 +463,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to track dog walks!!";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -513,6 +522,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to track dog walks!!";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -533,6 +547,7 @@
 				DEVELOPMENT_TEAM = H46F5Z8KW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IA/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to track dog walks!!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -561,6 +576,7 @@
 				DEVELOPMENT_TEAM = H46F5Z8KW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IA/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to track dog walks!!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

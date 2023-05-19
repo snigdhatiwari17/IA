@@ -11,11 +11,6 @@ import RealmSwift
 class Pet: Object {
     @objc dynamic var petName: String = ""
     @objc dynamic var microchip: String = ""
-    @objc dynamic var width: Double = 0.0
-    @objc dynamic var height: Double = 0.0
-    @objc dynamic var age: Int = 0
-    @objc dynamic var weight: Double = 0.0
-    @objc dynamic var medicalHistory: String = ""
     @objc dynamic var dateCreated: Date? = Date()
 
 }

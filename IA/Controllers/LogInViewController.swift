@@ -19,6 +19,7 @@ class LogInViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        errorLabel.text = ""
     }
 
 
@@ -32,8 +33,13 @@ class LogInViewController: UIViewController {
                 } else {
                     self.performSegue(withIdentifier: K.toHomeFromLogInSegue, sender: self)
                 }
+                
+            }
+            if email == "admin" {
+                self.performSegue(withIdentifier: K.toAdminFromLogInSegue, sender: self)
             }
         }
+        
     }
 }
 

@@ -20,5 +20,4 @@ class Dog: Object {
     
     @objc dynamic var dogBreed: String = ""
     
-   
 }

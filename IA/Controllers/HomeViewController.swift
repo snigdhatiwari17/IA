@@ -16,6 +16,9 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func walkPressed(_ sender: UIButton) {
+      
+    }
+    
 }
 
