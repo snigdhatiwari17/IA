@@ -1,9 +1,3 @@
-//
-//  MapViewController.swift
-//  IA
-//
-//  Created by Snigdha Tiwari  on 17/05/23.
-//
 
 import AVFoundation
 import CoreLocation
@@ -11,75 +5,80 @@ import Foundation
 import MapKit
 import UIKit
 
+enum SettingsKeys: String {
+    case accuracy
+    case chimeOnLocationUpdate
+    case showCrumbsBoundingArea
+    case activity
+}
 
-class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
-    
-    var locationManager: CLLocationManager!
-    
-    @IBOutlet weak var mapsView: MKMapView!
+class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPlayerDelegate  {
+    let locationManager = CLLocationManager()
+    var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
-        mapsView.delegate = self
-        mapsView.showsUserLocation = true
-        mapsView.mapType = MKMapType(rawValue: 0)!
-        mapsView.userTrackingMode = MKUserTrackingMode(rawValue: 2)!
-        
-        locationManager = CLLocationManager()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-        locationManager.delegate = self;
-        
-        
-        // user activated automatic authorization info mode
-        var status = locationManager.authorizationStatus
-        
-        if status == .notDetermined || status == .denied || status == .authorizedWhenInUse {
-              print("location is not authorized for application")
-               locationManager.requestAlwaysAuthorization()
-               locationManager.requestWhenInUseAuthorization()
-           }
-        
-        locationManager.startUpdatingLocation()
-        locationManager.startUpdatingHeading()
-        
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.allowsBackgroundLocationUpdates = true
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.activityType = CLActivityType.fitness
     }
     
     @IBAction func startPressed(_ sender: Any) {
-        
-        func locationManager(manager: CLLocationManager!, didUpdateToLocation newLocation: CLLocation!, fromLocation oldLocation: CLLocation!) {
-            print("present location : \(newLocation.coordinate.latitude), \(newLocation.coordinate.longitude)")
-            // Debug->Location->City Bicycle Ride
-            if let oldLocationNew = oldLocation as CLLocation?{
-                let oldCoordinates = oldLocationNew.coordinate
-                let newCoordinates = newLocation.coordinate
-                var area = [oldCoordinates, newCoordinates]
-                var polyline = MKPolyline(coordinates: &area, count: area.count)
-                self.mapsView.addOverlay(polyline)
-            }
-
-        }
-        
-        func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer!{
-            if (overlay is MKPolyline) {
-                var pr = MKPolylineRenderer(overlay: overlay)
-                pr.strokeColor = .red
-                pr.lineWidth = 5
-                return pr
-            }
-            return nil
-        }
+        locationManager.startUpdatingLocation()
         
         
     }
+    // MARK: - CLLocationManagerDelegate
     
-    
-    @IBAction func stopPressed(_ sender: Any) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        // Play a sound so it's easy to tell when a location update occurs while the app is in the background.
+        if chimeOnLocationUpdate && !locations.isEmpty {
+            setSessionActiveWithMixing(true) // Ducks the audio of other apps when playing the chime.
+            playSound()
+        }
+        
+        // Always process all of the provided locations. Don't assume the array only contains a single location.
+        for location in locations {
+            displayNewBreadcrumbOnMap(location)
+        }
     }
     
     
+    // MARK: - Audio Player
     
+    private func setupAudioPlayer() {
+        setSessionActiveWithMixing(false)
+        if let sound = Bundle.main.url(forResource: "bells", withExtension: "aif") {
+            audioPlayer = try! AVAudioPlayer(contentsOf: sound)
+        }
+    }
     
+    private func tearDownAudioPlayer() {
+        audioPlayer?.stop()
+        audioPlayer = nil
+    }
+    
+    private func setSessionActiveWithMixing(_ duckIfOtherAudioIsPlaying: Bool) {
+        try! AVAudioSession.sharedInstance().setCategory(.playback, options: .mixWithOthers)
+        if AVAudioSession.sharedInstance().isOtherAudioPlaying && duckIfOtherAudioIsPlaying {
+            try! AVAudioSession.sharedInstance().setCategory(.playback, options: [.mixWithOthers, .duckOthers])
+        }
+        
+        try! AVAudioSession.sharedInstance().setActive(true)
+    }
+    
+    private func playSound() {
+        guard let audioPlayer else { return }
+        if audioPlayer.isPlaying == false {
+            audioPlayer.prepareToPlay()
+            audioPlayer.play()
+        }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        try! AVAudioSession.sharedInstance().setActive(false)
+    }
 }
-
 

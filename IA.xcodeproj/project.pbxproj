@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F472A58B2A3D93E0006161CE /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = F472A58A2A3D93E0006161CE /* CalendarKit */; };
+		F472A58D2A3F0F1E006161CE /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472A58C2A3F0F1E006161CE /* EKWrapper.swift */; };
 		F474E8502A1379E300EAD05C /* PetDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E84F2A1379E300EAD05C /* PetDetails.swift */; };
 		F474E8522A14CC0400EAD05C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E8512A14CC0400EAD05C /* MapViewController.swift */; };
 		F474E8582A16A31700EAD05C /* MedicineEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */; };
+		F474E85C2A17F38500EAD05C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F474E85B2A17F38500EAD05C /* Main.storyboard */; };
 		F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B59F29F82805009B86DB /* AppDelegate.swift */; };
 		F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5A129F82805009B86DB /* SceneDelegate.swift */; };
 		F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */; };
@@ -27,6 +30,8 @@
 		F4A3B63229FAC735009B86DB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F4A3B63129FAC735009B86DB /* FirebaseAuth */; };
 		F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B63329FACA23009B86DB /* PaymentViewController.swift */; };
 		F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B63529FACBD7009B86DB /* EMRViewController.swift */; };
+		F4C3DA832A42BD1600467B50 /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3DA822A42BD1600467B50 /* AdminHomeViewController.swift */; };
+		F4C3DA852A508A2300467B50 /* CheckAppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C3DA842A508A2300467B50 /* CheckAppointmentsViewController.swift */; };
 		F4C9F3732A11E0B30020E502 /* PetOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3722A11E0B30020E502 /* PetOwner.swift */; };
 		F4C9F3752A11E17F0020E502 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3742A11E17F0020E502 /* Pet.swift */; };
 		F4C9F3772A11E22A0020E502 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F3762A11E22A0020E502 /* Dog.swift */; };
@@ -40,6 +45,8 @@
 		F4C9F38D2A12B2E90020E502 /* Medicines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F38C2A12B2E90020E502 /* Medicines.swift */; };
 		F4C9F38E2A12B2E90020E502 /* Medicines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F38C2A12B2E90020E502 /* Medicines.swift */; };
 		F4C9F38F2A12B2E90020E502 /* Medicines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C9F38C2A12B2E90020E502 /* Medicines.swift */; };
+		F4E1C3492A372F0100450A5D /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1C3482A372F0100450A5D /* AppointmentViewController.swift */; };
+		F4E1C34B2A372FBA00450A5D /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E1C34A2A372FBA00450A5D /* ChatbotViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +67,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F472A58C2A3F0F1E006161CE /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
 		F474E84F2A1379E300EAD05C /* PetDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetails.swift; sourceTree = "<group>"; };
 		F474E8512A14CC0400EAD05C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineEditViewController.swift; sourceTree = "<group>"; };
+		F474E85B2A17F38500EAD05C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F4A3B59C29F82805009B86DB /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A3B59F29F82805009B86DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4A3B5A129F82805009B86DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +91,8 @@
 		F4A3B62629F9620E009B86DB /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
 		F4A3B63329FACA23009B86DB /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		F4A3B63529FACBD7009B86DB /* EMRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMRViewController.swift; sourceTree = "<group>"; };
+		F4C3DA822A42BD1600467B50 /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
+		F4C3DA842A508A2300467B50 /* CheckAppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAppointmentsViewController.swift; sourceTree = "<group>"; };
 		F4C9F3722A11E0B30020E502 /* PetOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetOwner.swift; sourceTree = "<group>"; };
 		F4C9F3742A11E17F0020E502 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		F4C9F3762A11E22A0020E502 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
@@ -89,6 +100,8 @@
 		F4C9F37C2A11E4530020E502 /* Prescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		F4C9F3882A12AD150020E502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4C9F38C2A12B2E90020E502 /* Medicines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicines.swift; sourceTree = "<group>"; };
+		F4E1C3482A372F0100450A5D /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
+		F4E1C34A2A372FBA00450A5D /* ChatbotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C9F3832A126B490020E502 /* RealmSwift in Frameworks */,
+				F472A58B2A3D93E0006161CE /* CalendarKit in Frameworks */,
 				F4C9F3812A126B490020E502 /* Realm in Frameworks */,
 				F4A3B63229FAC735009B86DB /* FirebaseAuth in Frameworks */,
 			);
@@ -148,6 +162,7 @@
 				F4A3B62329F94CD1009B86DB /* Controllers */,
 				F4A3B5A829F82807009B86DB /* Assets.xcassets */,
 				F4A3B5AA29F82807009B86DB /* LaunchScreen.storyboard */,
+				F474E85B2A17F38500EAD05C /* Main.storyboard */,
 				F4A3B5CF29F82949009B86DB /* Constants.swift */,
 				F4C9F3882A12AD150020E502 /* GoogleService-Info.plist */,
 			);
@@ -178,12 +193,16 @@
 				F4A3B61D29F94CA1009B86DB /* RegisterViewController.swift */,
 				F4A3B61F29F94CB2009B86DB /* LogInViewController.swift */,
 				F4A3B62129F94CC4009B86DB /* HomeViewController.swift */,
+				F4C3DA822A42BD1600467B50 /* AdminHomeViewController.swift */,
 				F4A3B62429F955A7009B86DB /* DetailViewController.swift */,
 				F4A3B62629F9620E009B86DB /* BlogViewController.swift */,
 				F4A3B63329FACA23009B86DB /* PaymentViewController.swift */,
+				F4E1C3482A372F0100450A5D /* AppointmentViewController.swift */,
+				F4C3DA842A508A2300467B50 /* CheckAppointmentsViewController.swift */,
 				F4A3B63529FACBD7009B86DB /* EMRViewController.swift */,
 				F474E8512A14CC0400EAD05C /* MapViewController.swift */,
 				F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */,
+				F4E1C34A2A372FBA00450A5D /* ChatbotViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,6 +210,7 @@
 		F4C9F3712A11E07F0020E502 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				F472A58C2A3F0F1E006161CE /* EKWrapper.swift */,
 				F4C9F38C2A12B2E90020E502 /* Medicines.swift */,
 				F4C9F37C2A11E4530020E502 /* Prescription.swift */,
 				F4C9F3722A11E0B30020E502 /* PetOwner.swift */,
@@ -222,6 +242,7 @@
 				F4A3B63129FAC735009B86DB /* FirebaseAuth */,
 				F4C9F3802A126B490020E502 /* Realm */,
 				F4C9F3822A126B490020E502 /* RealmSwift */,
+				F472A58A2A3D93E0006161CE /* CalendarKit */,
 			);
 			productName = IA;
 			productReference = F4A3B59C29F82805009B86DB /* IA.app */;
@@ -298,6 +319,7 @@
 			packageReferences = (
 				F4A3B63029FAC735009B86DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				F4C9F37F2A126B490020E502 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				F472A5892A3D93E0006161CE /* XCRemoteSwiftPackageReference "CalendarKit" */,
 			);
 			productRefGroup = F4A3B59D29F82805009B86DB /* Products */;
 			projectDirPath = "";
@@ -318,6 +340,7 @@
 				F4A3B5AC29F82807009B86DB /* LaunchScreen.storyboard in Resources */,
 				F4C9F3892A12AD150020E502 /* GoogleService-Info.plist in Resources */,
 				F4A3B5A929F82807009B86DB /* Assets.xcassets in Resources */,
+				F474E85C2A17F38500EAD05C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E1C3492A372F0100450A5D /* AppointmentViewController.swift in Sources */,
 				F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */,
 				F4A3B61E29F94CA1009B86DB /* RegisterViewController.swift in Sources */,
 				F4C9F3792A11E2340020E502 /* Cat.swift in Sources */,
@@ -352,7 +376,10 @@
 				F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */,
 				F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */,
 				F474E8522A14CC0400EAD05C /* MapViewController.swift in Sources */,
+				F4C3DA832A42BD1600467B50 /* AdminHomeViewController.swift in Sources */,
+				F472A58D2A3F0F1E006161CE /* EKWrapper.swift in Sources */,
 				F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */,
+				F4E1C34B2A372FBA00450A5D /* ChatbotViewController.swift in Sources */,
 				F474E8502A1379E300EAD05C /* PetDetails.swift in Sources */,
 				F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */,
 				F4C9F37D2A11E4530020E502 /* Prescription.swift in Sources */,
@@ -361,6 +388,7 @@
 				F4A3B63429FACA23009B86DB /* PaymentViewController.swift in Sources */,
 				F4C9F3732A11E0B30020E502 /* PetOwner.swift in Sources */,
 				F474E8582A16A31700EAD05C /* MedicineEditViewController.swift in Sources */,
+				F4C3DA852A508A2300467B50 /* CheckAppointmentsViewController.swift in Sources */,
 				F4A3B5D029F82949009B86DB /* Constants.swift in Sources */,
 				F4C9F3752A11E17F0020E502 /* Pet.swift in Sources */,
 				F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */,
@@ -547,7 +575,11 @@
 				DEVELOPMENT_TEAM = H46F5Z8KW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IA/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Allow calendar access to book appointments!!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Allow location to track dog walks!!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -576,7 +608,11 @@
 				DEVELOPMENT_TEAM = H46F5Z8KW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IA/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Allow calendar access to book appointments!!";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Allow location to track dog walks!!";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Allow location to track dog walks!!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -713,6 +749,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F472A5892A3D93E0006161CE /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.8;
+			};
+		};
 		F4A3B63029FAC735009B86DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -732,6 +776,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F472A58A2A3D93E0006161CE /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F472A5892A3D93E0006161CE /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
 		F4A3B63129FAC735009B86DB /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F4A3B63029FAC735009B86DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
