@@ -13,15 +13,34 @@ enum SettingsKeys: String {
 }
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPlayerDelegate  {
+    
     let locationManager = CLLocationManager()
     var audioPlayer: AVAudioPlayer?
     
+    
+    
+    @IBOutlet var mapView: MKMapView!
+    @IBOutlet weak var settingsButton: UIBarButtonItem!
+    @IBOutlet weak var recordButton: UIBarButtonItem!
+    @IBOutlet weak var mapTrackingButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
-        
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.allowsBackgroundLocationUpdates = true
+        // MARK: - Location Mangement Properties
+        var isMonitoringLocation = false
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.activityType = CLActivityType.fitness
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.allowsBackgroundLocationUpdates = true
+        
+    }
+    
+    
+    
+    
+    var chimeOnLocationUpdate = UserDefaults.standard.bool(forKey: SettingsKeys.chimeOnLocationUpdate.rawValue) {
+        didSet {
+            UserDefaults.standard.set(chimeOnLocationUpdate, forKey: SettingsKeys.chimeOnLocationUpdate.rawValue)
+        }
     }
     
     @IBAction func startPressed(_ sender: Any) {
@@ -80,5 +99,37 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, AVAudioPla
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         try! AVAudioSession.sharedInstance().setActive(false)
     }
+    
+    
+    // MARK: - Menus
+    private var audioSettingsMenu: UIMenu {
+        let menu = UIMenu(title: "Audio", options: .displayInline, children: [
+            UIAction(title: "Play Sound on Location Updates",
+                     state: chimeOnLocationUpdate ? .on : .off,
+                     handler: { _ in
+                         self.chimeOnLocationUpdate.toggle()
+                         self.configureSettingsMenu()
+                     })
+        ])
+        
+        return menu
+    }
+    func configureSettingsMenu() {
+        settingsButton.menu = UIMenu(title: "Settings", children: [
+            mapSettingsMenu,
+            audioSettingsMenu
+        ])
+    }
+    private var mapSettingsMenu: UIMenu {
+        let menu = UIMenu(title: "Map", options: .displayInline, children: [
+            UIAction(title: "Display Breadcrumb Bounds",
+                     state: showBreadcrumbBounds ? .on : .off,
+                     handler: { _ in
+                         self.showBreadcrumbBounds.toggle()
+                         self.configureSettingsMenu()
+                     })
+        ])
+        
+        return menu
+    }
 }
-
