@@ -16,13 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        let defaultPreferences: [String: Any] = [
-            SettingsKeys.chimeOnLocationUpdate.rawValue: true,
-            SettingsKeys.accuracy.rawValue: kCLLocationAccuracyBest,
-            SettingsKeys.showCrumbsBoundingArea.rawValue: true,
-            SettingsKeys.activity.rawValue: CLActivityType.fitness.rawValue
-        ]
-        UserDefaults.standard.register(defaults: defaultPreferences)
+        
+        
+        do {
+             _ = try Realm()
+        } catch {
+            print("error initializing realm \(error)")
+        }
+       
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+        
         
         return true
     }
@@ -32,16 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
        
         
-       // print(Realm.Configuration.defaultConfiguration.fileURL)
-        
-        do {
-             _ = try Realm()
-        } catch {
-            print("error initializing realm \(error)")
-        }
-       
-       
-        
+    
         
         return true
     }

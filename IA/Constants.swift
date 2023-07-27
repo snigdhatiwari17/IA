@@ -6,6 +6,9 @@
 //
 
 import Foundation
+
+let REALM_QUEUE = DispatchQueue(label: "realmQueue") //global variable
+let REALM = "realRunConfig"
 struct K {
     
     static let appName = "Vets4Pets🐶"
@@ -17,4 +20,6 @@ struct K {
     static let resusableEMRcell = "EMRcell"
     static let toAdminFromLogInSegue = "logInToAdmin"
     static let toMapsFromHome = "homeToMap"
+    
+    
 }

@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F43FD54E2A6D6C4400683654 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FD54D2A6D6C4400683654 /* MapKitViewController.swift */; };
+		F43FD5502A6D75BE00683654 /* LocationVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FD54F2A6D75BE00683654 /* LocationVCViewController.swift */; };
+		F43FD5522A6D82A600683654 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FD5512A6D82A600683654 /* Extensions.swift */; };
+		F43FD5542A71074D00683654 /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FD5532A71074D00683654 /* Walk.swift */; };
+		F43FD5562A71484A00683654 /* WalkLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FD5552A71484A00683654 /* WalkLogCell.swift */; };
+		F43FD5582A714E4500683654 /* WalkLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FD5572A714E4500683654 /* WalkLogViewController.swift */; };
+		F43FD55C2A721DDF00683654 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FD55B2A721DDE00683654 /* Location.swift */; };
 		F472A58B2A3D93E0006161CE /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = F472A58A2A3D93E0006161CE /* CalendarKit */; };
 		F472A58D2A3F0F1E006161CE /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F472A58C2A3F0F1E006161CE /* EKWrapper.swift */; };
 		F474E8502A1379E300EAD05C /* PetDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E84F2A1379E300EAD05C /* PetDetails.swift */; };
-		F474E8522A14CC0400EAD05C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E8512A14CC0400EAD05C /* MapViewController.swift */; };
 		F474E8582A16A31700EAD05C /* MedicineEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */; };
 		F474E85C2A17F38500EAD05C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F474E85B2A17F38500EAD05C /* Main.storyboard */; };
 		F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3B59F29F82805009B86DB /* AppDelegate.swift */; };
@@ -67,9 +73,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F43FD54D2A6D6C4400683654 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		F43FD54F2A6D75BE00683654 /* LocationVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVCViewController.swift; sourceTree = "<group>"; };
+		F43FD5512A6D82A600683654 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F43FD5532A71074D00683654 /* Walk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		F43FD5552A71484A00683654 /* WalkLogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkLogCell.swift; sourceTree = "<group>"; };
+		F43FD5572A714E4500683654 /* WalkLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkLogViewController.swift; sourceTree = "<group>"; };
+		F43FD55B2A721DDE00683654 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F472A58C2A3F0F1E006161CE /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
 		F474E84F2A1379E300EAD05C /* PetDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetails.swift; sourceTree = "<group>"; };
-		F474E8512A14CC0400EAD05C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineEditViewController.swift; sourceTree = "<group>"; };
 		F474E85B2A17F38500EAD05C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F4A3B59C29F82805009B86DB /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +145,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F43FD5592A714E5700683654 /* admin */ = {
+			isa = PBXGroup;
+			children = (
+				F4A3B62429F955A7009B86DB /* DetailViewController.swift */,
+				F4C3DA822A42BD1600467B50 /* AdminHomeViewController.swift */,
+				F4A3B62129F94CC4009B86DB /* HomeViewController.swift */,
+				F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */,
+				F4A3B61D29F94CA1009B86DB /* RegisterViewController.swift */,
+				F4A3B61F29F94CB2009B86DB /* LogInViewController.swift */,
+			);
+			path = admin;
+			sourceTree = "<group>";
+		};
+		F43FD55A2A714E7700683654 /* map + walks */ = {
+			isa = PBXGroup;
+			children = (
+				F43FD54D2A6D6C4400683654 /* MapKitViewController.swift */,
+				F43FD54F2A6D75BE00683654 /* LocationVCViewController.swift */,
+				F43FD5512A6D82A600683654 /* Extensions.swift */,
+				F43FD5552A71484A00683654 /* WalkLogCell.swift */,
+				F43FD5572A714E4500683654 /* WalkLogViewController.swift */,
+			);
+			path = "map + walks";
+			sourceTree = "<group>";
+		};
 		F4A3B59329F82805009B86DB = {
 			isa = PBXGroup;
 			children = (
@@ -189,20 +226,15 @@
 		F4A3B62329F94CD1009B86DB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F4A3B5A329F82805009B86DB /* WelcomeViewController.swift */,
-				F4A3B61D29F94CA1009B86DB /* RegisterViewController.swift */,
-				F4A3B61F29F94CB2009B86DB /* LogInViewController.swift */,
-				F4A3B62129F94CC4009B86DB /* HomeViewController.swift */,
-				F4C3DA822A42BD1600467B50 /* AdminHomeViewController.swift */,
-				F4A3B62429F955A7009B86DB /* DetailViewController.swift */,
+				F43FD5592A714E5700683654 /* admin */,
 				F4A3B62629F9620E009B86DB /* BlogViewController.swift */,
 				F4A3B63329FACA23009B86DB /* PaymentViewController.swift */,
 				F4E1C3482A372F0100450A5D /* AppointmentViewController.swift */,
 				F4C3DA842A508A2300467B50 /* CheckAppointmentsViewController.swift */,
 				F4A3B63529FACBD7009B86DB /* EMRViewController.swift */,
-				F474E8512A14CC0400EAD05C /* MapViewController.swift */,
 				F474E8572A16A31700EAD05C /* MedicineEditViewController.swift */,
 				F4E1C34A2A372FBA00450A5D /* ChatbotViewController.swift */,
+				F43FD55A2A714E7700683654 /* map + walks */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +250,8 @@
 				F474E84F2A1379E300EAD05C /* PetDetails.swift */,
 				F4C9F3762A11E22A0020E502 /* Dog.swift */,
 				F4C9F3782A11E2340020E502 /* Cat.swift */,
+				F43FD5532A71074D00683654 /* Walk.swift */,
+				F43FD55B2A721DDE00683654 /* Location.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -367,20 +401,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43FD5502A6D75BE00683654 /* LocationVCViewController.swift in Sources */,
+				F43FD5522A6D82A600683654 /* Extensions.swift in Sources */,
 				F4E1C3492A372F0100450A5D /* AppointmentViewController.swift in Sources */,
 				F4A3B5A429F82805009B86DB /* WelcomeViewController.swift in Sources */,
 				F4A3B61E29F94CA1009B86DB /* RegisterViewController.swift in Sources */,
 				F4C9F3792A11E2340020E502 /* Cat.swift in Sources */,
 				F4C9F38D2A12B2E90020E502 /* Medicines.swift in Sources */,
 				F4A3B62029F94CB2009B86DB /* LogInViewController.swift in Sources */,
+				F43FD54E2A6D6C4400683654 /* MapKitViewController.swift in Sources */,
 				F4A3B63629FACBD7009B86DB /* EMRViewController.swift in Sources */,
 				F4A3B5A029F82805009B86DB /* AppDelegate.swift in Sources */,
-				F474E8522A14CC0400EAD05C /* MapViewController.swift in Sources */,
 				F4C3DA832A42BD1600467B50 /* AdminHomeViewController.swift in Sources */,
+				F43FD5542A71074D00683654 /* Walk.swift in Sources */,
 				F472A58D2A3F0F1E006161CE /* EKWrapper.swift in Sources */,
 				F4A3B5A229F82805009B86DB /* SceneDelegate.swift in Sources */,
 				F4E1C34B2A372FBA00450A5D /* ChatbotViewController.swift in Sources */,
 				F474E8502A1379E300EAD05C /* PetDetails.swift in Sources */,
+				F43FD5562A71484A00683654 /* WalkLogCell.swift in Sources */,
 				F4A3B62729F9620E009B86DB /* BlogViewController.swift in Sources */,
 				F4C9F37D2A11E4530020E502 /* Prescription.swift in Sources */,
 				F4A3B62229F94CC5009B86DB /* HomeViewController.swift in Sources */,
@@ -391,6 +429,8 @@
 				F4C3DA852A508A2300467B50 /* CheckAppointmentsViewController.swift in Sources */,
 				F4A3B5D029F82949009B86DB /* Constants.swift in Sources */,
 				F4C9F3752A11E17F0020E502 /* Pet.swift in Sources */,
+				F43FD55C2A721DDF00683654 /* Location.swift in Sources */,
+				F43FD5582A714E4500683654 /* WalkLogViewController.swift in Sources */,
 				F4A3B62529F955A7009B86DB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
